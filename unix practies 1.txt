@@ -1,0 +1,130 @@
+
+iaj36@sidja MINGW64 ~/Desktop/Sanju
+$ git init
+Initialized empty Git repository in C:/Users/iaj36/Desktop/Sanju/.git/
+
+iaj36@sidja MINGW64 ~/Desktop/Sanju (master)
+$ ls
+'New Text Document.txt'  'join sql query1.txt'  'unix question set.txt'
+
+iaj36@sidja MINGW64 ~/Desktop/Sanju (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        New Text Document.txt
+        join sql query1.txt
+        unix question set.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+iaj36@sidja MINGW64 ~/Desktop/Sanju (master)
+$ git add --a
+
+iaj36@sidja MINGW64 ~/Desktop/Sanju (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   New Text Document.txt
+        new file:   join sql query1.txt
+        new file:   unix question set.txt
+
+
+iaj36@sidja MINGW64 ~/Desktop/Sanju (master)
+$ git rm --cached "^C
+
+iaj36@sidja MINGW64 ~/Desktop/Sanju (master)
+$ git rm --cached "New Text Document.txt"
+rm 'New Text Document.txt'
+
+iaj36@sidja MINGW64 ~/Desktop/Sanju (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   join sql query1.txt
+        new file:   unix question set.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        New Text Document.txt
+
+
+iaj36@sidja MINGW64 ~/Desktop/Sanju (master)
+$ git add --a
+
+iaj36@sidja MINGW64 ~/Desktop/Sanju (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   New Text Document.txt
+        new file:   join sql query1.txt
+        new file:   unix question set.txt
+
+
+iaj36@sidja MINGW64 ~/Desktop/Sanju (master)
+$ git commit -m "First Version"
+[master (root-commit) f7ad626] First Version
+ 3 files changed, 534 insertions(+)
+ create mode 100644 New Text Document.txt
+ create mode 100644 join sql query1.txt
+ create mode 100644 unix question set.txt
+
+iaj36@sidja MINGW64 ~/Desktop/Sanju (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+iaj36@sidja MINGW64 ~/Desktop/Sanju (master)
+$ git branch -M master
+
+iaj36@sidja MINGW64 ~/Desktop/Sanju (master)
+$ git remote add origin https://github.com/Sid3400/sid.git
+
+iaj36@sidja MINGW64 ~/Desktop/Sanju (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 7.78 KiB | 568.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Sid3400/sid.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+
+iaj36@sidja MINGW64 ~/Desktop/Sanju (master)
+$ git push -u origin master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+iaj36@sidja MINGW64 ~/Desktop/Sanju (master)
+$ git pull origin master
+From https://github.com/Sid3400/sid
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+iaj36@sidja MINGW64 ~/Desktop/Sanju (master)
+$ git clone "https://github.com/Sid3400/sid"
+Cloning into 'sid'...
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 0), reused 5 (delta 0), pack-reused 0
+Receiving objects: 100% (5/5), 7.78 KiB | 137.00 KiB/s, done.
+
