@@ -1,4 +1,4 @@
-1)From the following tables write a SQL query to calculate the average price of items of each company. 
+1)From the following tables write a SQL query to calculate the average price of items of each company. my name siddharth i have working on it company
 Return average value and company name.
 
 SELECT AVG(pro_price), company_mast.com_name FROM item_mast INNER JOIN company_mast
